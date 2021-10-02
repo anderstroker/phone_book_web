@@ -7,7 +7,6 @@ import AppRoute from './Components/AppRoutes';
 function App() {
 	return (
 		<AuthProvider>
-      AppContext
 			<Router>
 				<Switch>
 					{routes.map((route) => (

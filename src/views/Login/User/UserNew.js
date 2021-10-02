@@ -23,10 +23,6 @@ const UserNew = () => {
   const history = useHistory();
 
   const handleSubmit = async () => {
-    if (newUser && newUser.username === '' && newUser.password === '') {
-      console.log('newUser', newUser);
-      
-    }
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
@@ -35,7 +31,6 @@ const UserNew = () => {
     let response = await fetch('http://localhost:3000/user/new', requestOptions);
     let data = await response.json();
     if (data && data.ok) {
-      console.log('aqi')
       history.push('/login')
     }
   }

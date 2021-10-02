@@ -59,14 +59,12 @@ function Login({props}) {
               id="password"
               placeholder="contraseña"
             />
-            <Button onClick={handleLogin} color="primary">Iniciar sesión</Button>
-          </Form>
-          <Row style={{marginTop:'10px'}}>
-            <Col>
-            </Col>
-            <Col>
+            <Col style={{marginTop: '10px'}}>
+              <Button style={{marginRight: '10px'}} onClick={handleLogin} color="primary">Iniciar sesión</Button>
               <Button onClick={handleUserNew} outline color="primary">Registrarse</Button>
             </Col>
+          </Form>
+          <Row style={{marginTop:'10px'}}>
           </Row>
         </CardBody>
       </Card>

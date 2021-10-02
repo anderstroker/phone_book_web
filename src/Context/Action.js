@@ -14,7 +14,6 @@ export async function loginUser(dispatch, loginPayload) {
     let token = response.headers.get('Authorization')
     
     if (data.user) {
-      // console.log(data)
       const payload = {
         user: data.user,
         token
